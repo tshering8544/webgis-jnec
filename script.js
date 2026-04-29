@@ -47,7 +47,7 @@ function zoomToBhutan() {
 
 
 // TASK 5: Paste GeoJSON layer loading code here
-fetch("../Data/bhutan_dzong_web.geojson")
+fetch("./Data/bhutan_dzong_web.geojson")
   .then(response => response.json())
   .then(data => {
     L.geoJSON(data, {
@@ -63,7 +63,7 @@ fetch("../Data/bhutan_dzong_web.geojson")
     }).addTo(dzongkhagLayer);
   });
 
-fetch("../Data/bhutan_education_center.geojson")
+fetch("./Data/bhutan_education_center.geojson")
   .then(response => response.json())
   .then(data => {
     L.geoJSON(data, {
@@ -81,7 +81,7 @@ fetch("../Data/bhutan_education_center.geojson")
     }).addTo(educationLayer);
   });
 
-fetch("../Data/bhutan_health_center.geojson")
+fetch("./Data/bhutan_health_center.geojson")
   .then(response => response.json())
   .then(data => {
     L.geoJSON(data, {
